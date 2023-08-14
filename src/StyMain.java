@@ -4,15 +4,16 @@ import sty.abstractfactory.factory.VanFactory;
 import sty.abstractfactory.parts.body.Body;
 import sty.abstractfactory.parts.chassis.Chassis;
 import sty.abstractfactory.parts.window.Window;
+import sty.commons.VehicleType;
 
 public class StyMain {
 
 	public static void main(String[] args) {
 		/* ####### Abstract factory calls - Start #######*/
-		VehicleType whatToMake = VehicleType.Van;
+		VehicleType whatToMake = VehicleType.VAN;
 		AbstractVehicleFactory factory = null;
 		
-		if(whatToMake.equals(VehicleType.Car)) {
+		if(whatToMake.equals(VehicleType.CAR)) {
 			factory = new CarFactory();
 		} else {
 			factory = new VanFactory();
