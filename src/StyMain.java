@@ -4,8 +4,8 @@ import sty.abstractfactory.parts.chassis.Chassis;
 import sty.abstractfactory.parts.window.Window;
 import sty.commons.Color;
 import sty.commons.VehicleType;
+import sty.commons.vehicle.Vehicle;
 import sty.factorymethod.factory.VehicleFactory.DriveStyle;
-import sty.factorymethod.vehicle.Vehicle;
 import sty.factorymethod.factory.CarFactory;
 import sty.factorymethod.factory.VanFactory;
 

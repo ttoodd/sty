@@ -1,8 +1,8 @@
 package sty.factorymethod.factory;
 
-import sty.factorymethod.vehicle.BoxVan;
-import sty.factorymethod.vehicle.Pickup;
-import sty.factorymethod.vehicle.Vehicle;
+import sty.commons.vehicle.BoxVan;
+import sty.commons.vehicle.Pickup;
+import sty.commons.vehicle.Vehicle;
 
 public class VanFactory extends VehicleFactory{
 

@@ -1,4 +1,4 @@
-package sty.factorymethod.vehicle;
+package sty.commons.vehicle;
 
 import sty.commons.Color;
 
