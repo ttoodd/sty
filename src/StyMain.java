@@ -9,7 +9,7 @@ public class StyMain {
 
 	public static void main(String[] args) {
 		/* ####### Abstract factory calls - Start #######*/
-		VehicleType whatToMake = VehicleType.Van;
+		VehicleType whatToMake = VehicleType.Car;
 		AbstractVehicleFactory factory = null;
 		
 		if(whatToMake.equals(VehicleType.Car)) {
