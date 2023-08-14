@@ -1,13 +1,15 @@
-import sty.abstractfactory.factory.*;
-import sty.abstractfactory.parts.body.Body;
-import sty.abstractfactory.parts.chassis.Chassis;
-import sty.abstractfactory.parts.window.Window;
+import sty.builder.CarBuilder;
+import sty.builder.CarDirector;
+import sty.builder.VehicleBuilder;
+import sty.builder.VehicleDirector;
 import sty.commons.Color;
 import sty.commons.VehicleType;
+import sty.commons.vehicle.AbstractCar;
+import sty.commons.vehicle.Saloon;
 import sty.commons.vehicle.Vehicle;
-import sty.factorymethod.factory.VehicleFactory.DriveStyle;
 import sty.factorymethod.factory.CarFactory;
 import sty.factorymethod.factory.VanFactory;
+import sty.factorymethod.factory.VehicleFactory.DriveStyle;
 
 public class StyMain {
 
@@ -46,6 +48,14 @@ public class StyMain {
 		System.out.println(vehicle);
 		
 		/* ####### Factory Method calls - End #######*/
+		
+		/* ####### Builder calls - Start #######*/
+		AbstractCar car = new Saloon();
+		VehicleBuilder builder = new CarBuilder(car);
+		VehicleDirector director = new CarDirector();
+		Vehicle vehicleToBuild = director.build(builder);
+		System.out.println(vehicleToBuild);
+		/* ####### Builder calls - End #######*/
 	}
 
 }
