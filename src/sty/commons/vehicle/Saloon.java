@@ -1,8 +1,8 @@
-package sty.factorymethod.vehicle;
+package sty.commons.vehicle;
 
 import sty.commons.Color;
 
-public class Pickup extends AbstractVan {
+public class Saloon extends AbstractCar{
 
 	@Override
 	public void setEngine(String engine) {

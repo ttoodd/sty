@@ -1,8 +1,8 @@
-package sty.factorymethod.vehicle;
+package sty.commons.vehicle;
 
 import sty.commons.Color;
 
-public class Coupe extends AbstractCar{
+public class Pickup extends AbstractVan {
 
 	@Override
 	public void setEngine(String engine) {
@@ -25,7 +25,7 @@ public class Coupe extends AbstractCar{
 	public Color getColor() {
 		return this.color;
 	}
-	
+
 	public String toString() {
 		return "Class: " + this.getClass().toString() + "\n"
 				+ "Engine: " + this.getEngine() + "\n"

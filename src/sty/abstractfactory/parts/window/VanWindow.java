@@ -4,7 +4,7 @@ public class VanWindow implements Window {
 
 	@Override
 	public String getWindowParts() {
-		return "Window glassware for a van";
+		return "Window glassware for a van.";
 	}
 	
 }

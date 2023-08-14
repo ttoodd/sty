@@ -1,9 +1,9 @@
 package sty.factorymethod.factory;
 
-import sty.factorymethod.vehicle.Coupe;
-import sty.factorymethod.vehicle.Saloon;
-import sty.factorymethod.vehicle.Sport;
-import sty.factorymethod.vehicle.Vehicle;
+import sty.commons.vehicle.Coupe;
+import sty.commons.vehicle.Saloon;
+import sty.commons.vehicle.Sport;
+import sty.commons.vehicle.Vehicle;
 
 public class CarFactory extends VehicleFactory{
 	@Override

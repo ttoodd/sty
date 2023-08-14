@@ -1,7 +1,7 @@
 package sty.factorymethod.factory;
 
 import sty.commons.Color;
-import sty.factorymethod.vehicle.Vehicle;
+import sty.commons.vehicle.Vehicle;
 
 public abstract class VehicleFactory {
 	public enum DriveStyle {ECONOMICAL, MIDRANGE, POWERFUL};

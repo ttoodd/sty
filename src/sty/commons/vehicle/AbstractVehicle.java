@@ -1,4 +1,4 @@
-package sty.factorymethod.vehicle;
+package sty.commons.vehicle;
 
 public abstract class AbstractVehicle implements Vehicle {
 	
